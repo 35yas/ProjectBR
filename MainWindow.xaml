@@ -1,0 +1,33 @@
+﻿<Window x:Class="LightweightPlatform.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Lightweight Platform"
+        Height="500"
+        Width="800">
+    <Grid>
+        <TextBox Name="PacketDisplay"
+                VerticalScrollBarVisibility="Auto"
+                HorizontalScrollBarVisibility="Auto"
+                 TextWrapping="Wrap"
+                Height="300"
+                Width="750"
+                Margin="10"
+                IsReadOnly="True"/>
+        <StackPanel Orientation="Horizontal"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Bottom">
+            <Button Content="Start Test"
+                    Width="80"
+                    Click="StartTestButton_Click"/>
+            <Button Content="Stop Test"
+                    Width="80"
+                    Click="StopTestButton_Click"
+                    Margin="5,0"/>
+            <Button Content="Load Script"
+                    Width="100"
+                    Click="LoadScriptButton_Click"
+                    Margin="5,0"/>
+                    
+        </StackPanel>
+    </Grid>
+</Window>
